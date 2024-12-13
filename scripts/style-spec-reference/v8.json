@@ -86,7 +86,8 @@
       "type": "projection",
       "doc": "The projection configuration. **Note:** this definition is still experimental and is under development in maplibre-gl-js.",
       "example": {
-        "type": "globe"
+        "type": "globe",
+        "name": "globe"
       }
     },
     "terrain": {
@@ -4496,6 +4497,10 @@
           "doc": "The globe projection."
         }
       }
+    },
+    "name": {
+      "type": "string",
+      "doc": "The 'name' property specifies the projection name, which is required if you intend to use this style in Mapbox maps for globe projection. This property helps define the specific projection system used in the style and ensures compatibility with Mapbox's globe rendering."
     }
   },
   "paint": [
